@@ -6,6 +6,11 @@
   <head>
     <meta charset="utf-8">
     <title>Franzi Polleit | Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -21,13 +26,13 @@
         <div class="half-width">
           <nav>
             <ul>
-              <li>About</li>
-              <li>Portfolio</li>
-              <li>Contact</li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
-        <h2>Let&apos;s code something cool&excl;</h2>
+        <h2><span>Let&apos;s</span> code something cool&excl;</h2>
       </div>
 
     </header>
@@ -39,12 +44,13 @@
       <section id="about">
         <div class="full-width">
           <div class="half-width">
+            <img src="img/franzi.jpg" alt="a picture of me" />
           </div>
           <div class="half-width">
             <h2>A little bit about me</h2>
-            <p><strong>Hi there&excl; I&apos;m Franzi Polleit.</strong></p>
+            <p><strong>Hi there&excl; My name is Franzi Polleit.</strong></p>
             <p>
-              I&apos;m aspiring to become a digital nomad and web developer. That&apos;s why I&apos;m currently learning how to code with Skillcrush.<br>
+              I&apos;m an aspiring digital nomad and web developer who is passionate about working for a good cause and helping others.<br>
               I love exploring new countries, cultures and the great outdoors just as much as I love curling up with a good book and forgetting the outside world while reading.
             </p>
             <p><strong>Can&apos;t wait to work with you&excl;</strong></p>
@@ -58,14 +64,17 @@
         <div class="full-width">
           <h2>My Portfolio</h2>
           <div class="third-width">
+            <img src="img/jubilee-austen-project.jpg" alt="a picture of the project website" />
             <h3>Jubilee Austen Project</h3>
             <p>HTML &amp; CSS Website</p>
           </div>
-          <div class="Third-width">
+          <div class="third-width">
+            <img src="img/rogue-pickings-project.jpg" alt="a picture of the project website" />
             <h3>Rogue Pickings Project</h3>
             <p>HTML &amp; CSS Website</p>
           </div>
           <div class="third-width">
+            <img src="img/vision-board-project.jpg" alt="a picture of the project website" />
             <h3>Vision Board</h3>
             <p>HTML &amp; CSS Exercise</p>
           </div>
@@ -77,12 +86,22 @@
       <footer id="contact">
         <div class="full-width">
           <div class="half-width">
+            <img src="img/contact.jpg" alt="my contact image" id="contact-img" />
           </div>
           <div class="half-width">
             <h2>Like what you see&quest;</h2>
-            <h3>Let&apos;s meet for a cup of coffee &lpar;or tea&rpar;</h3>
-            <h3>Or connect with me online</h3>
+            <h3 id="email-header">Let&apos;s chat</h3>
+              <a href="mailto:franziska.polleit@gmail.com"><img src="img/icon-envelope.png" alt="Envelope icon" id="envelope" />franziska.polleit [@] gmail.com</a>
+            <h3 id="socialmedia-header">Or connect with me online</h3>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/franziska-polleit-417703b6/" target="_blank"><img src="img/icon-linkedin.png" alt="Linkedin icon" /></a></li>
+              <li><a href="https://github.com/franzipolleit" target="_blank"><img src="img/icon-github.png" alt="Github icon" /></a></li>
+              <li><a href="https://twitter.com/FranziPolleit" target="_blank"><img src="img/icon-twitter.png" alt="Twitter icon" /></a></li>
+              <li><a href="https://www.instagram.com/franzipolleit/" target="_blank"><img src="img/icon-instagram.png" alt="Instagram icon" /></a></li>
+            </ul>
           </div>
+        </div>
+        <div class="full-width" id="copyright">
           <p>Copyright 2021 &verbar; Franziska Polleit</p>
         </div>
       </footer>
