@@ -93,8 +93,9 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
-  text-align: left;
-  color: #2b2b2b;
+  text-align: center;
+  background-color: #ffffff;
+  color: #e094bc;
 }
 
 ul {
@@ -113,12 +114,29 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+  color:#7e013a;
+}
+
 h1 {
-  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+strong {
+  color: #7e013a;
 }
 
 p {
-  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 
 /*---------------------- Base Header - Footer Styles --------------------*/
@@ -129,7 +147,6 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  /*background-color: #7e013a;*/
   color: #e094bc;
 }
 
@@ -141,13 +158,6 @@ header .content-wrapper {
   margin: 0;
 }
 
-/*.header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-  background: #e094bc;
-}*/
-
 header nav {
   width: 100%;
   font-weight: 500;
@@ -157,39 +167,38 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   width: 100%;
   margin: 0;
+}
+
+header nav ul li {
+  font-size: .875em;
 }
 
 /* Footer styles */
 
 
 
-/*---------------------- Mobile Styles - Homepage --------------------*/
-
-/* Logo & Hero Area */
-
-.logo-area {
-  display: none;
-}
-
-.header-divider {
-  display: none;
-}
-
-#hero-area {
-  display: none;
-}
+/*---------------------- Mobile Styles --------------------*/
 
 /* Intro Section */
 
 #intro {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  margin: 0;
+  flex-flow: column wrap;*/
+  margin: 30px;
+}
+
+#intro h1 {
+  padding: 20px 0;
+}
+
+#intro p {
+  color:#7e013a;
+  padding: 20px 0;
+  font-size: 1.5em;
 }
 
 /* About Section */
@@ -199,22 +208,13 @@ header nav ul {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin: 0;
+  margin: 30px;
 }
 
 #about img {
   width: 100%;
-}
-
-#about h2 {
-  font-size: 1.5em;
-  text-align: center;
-}
-
-#about p {
-  color: #7f7f7f;
-  line-height: 2em;
-  text-align: center;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
 }
 
 /* Skills Section */
@@ -223,18 +223,14 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  background-color: #e094bc;
+  margin: 30px;
 }
 
-#skills h2 {
-  text-align: center;
-}
 
 #skills i {
   color: #7e013a;
-  font-size: 3.75em;
-  margin-bottom: 40px;
+  font-size: 5em;
+  margin-bottom: 10px;
 }
 
 #skills .skills-items {
@@ -250,8 +246,12 @@ header nav ul {
 }
 
 #skills p {
-  text-align: center;
   margin: 0;
+}
+
+#skills .tech-stack {
+  padding: 30px 15px;
+  color: #7e013a;
 }
 
 /* Projects Section */
@@ -261,28 +261,25 @@ header nav ul {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #ae0250;
 }
 
 #projects img {
   padding: 30px 0 30px 0;
   width: 80%;
+  border-radius: 10%;
 }
 
-#projects .portfolio-project {
+.portfolio-project {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  padding: 50px;
-}
-
-#projects h2 {
-  text-align: center;
-}
-
-#projects h3 {
-  text-align: center;
+  padding: 15px;
+  margin: 30px;
+  border:#7e013a solid 3px;
+  border-radius: 30px;
+  box-shadow: 10px 5px 5px #e094bc;
+  background-color: #fffafa;
 }
 
 /* Footer styles */
@@ -297,7 +294,7 @@ header nav ul {
   align-items: center;
   flex-flow: column wrap;
   margin: 0;
-  background-color: #7e013a;
+  /*background-color: #7e013a;*/
 }
 
 .contact-info {
@@ -309,7 +306,7 @@ header nav ul {
 }
 
 #contact i {
-  font-size: 3.75em;
+  font-size: 3.5em;
   margin-bottom: 40px;
 }
 
@@ -319,6 +316,15 @@ header nav ul {
   flex-wrap: wrap;
   width: 100%;
   margin: 50px 0 0 0;
+}
+
+#copyright {
+  font-size: .75em;
+  color:#7e013a;
+}
+
+#copyright p {
+  margin: 0;
 }
 
 /* ==========================================================================
