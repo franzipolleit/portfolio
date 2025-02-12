@@ -139,7 +139,7 @@ p {
   line-height: 1.5em;
 }
 
-/*---------------------- Base Header - Footer Styles --------------------*/
+/*---------------------- Mobile Styles --------------------*/
 
 /* Header styles */
 
@@ -147,14 +147,14 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  color: #e094bc;
+  /*color: #e094bc;*/
 }
 
 header .content-wrapper {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap;*/
   margin: 0;
 }
 
@@ -175,19 +175,13 @@ header nav ul li {
   font-size: .875em;
 }
 
-/* Footer styles */
-
-
-
-/*---------------------- Mobile Styles --------------------*/
-
 /* Intro Section */
 
 #intro {
-  /*display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;*/
+  flex-flow: column wrap;
   margin: 30px;
 }
 
@@ -233,14 +227,14 @@ header nav ul li {
   margin-bottom: 10px;
 }
 
-#skills .skills-items {
+#skills .skills-items-list {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
 }
 
-#skills article {
+#skills .skills-item {
   width: 63%;
   margin: 30px 0;
 }
@@ -270,16 +264,27 @@ header nav ul li {
 }
 
 .portfolio-project {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-flow: row wrap;
+  flex-flow: row wrap;*/
   padding: 15px;
-  margin: 30px;
+  margin: 70px 30px;
   border:#7e013a solid 3px;
   border-radius: 30px;
   box-shadow: 10px 5px 5px #e094bc;
   background-color: #fffafa;
+}
+
+.portfolio-project button {
+  background-color: #7e013a;
+  color: #e094bc;
+  font-size: 1.25em;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0;
 }
 
 /* Footer styles */
@@ -298,10 +303,10 @@ header nav ul li {
 }
 
 .contact-info {
-  display: flex;
+  /*display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap;*/
   color: #e094bc;
 }
 
@@ -410,8 +415,98 @@ header nav ul li {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles */
+
+  /* General Styles */
+
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  /* Header Styles */
+
+  header {
+    padding: 30px 0;
+  }
+  
+  header nav ul {
+    justify-content: space-between;
+  }
+  
+  header nav ul li {
+    font-size: 1em;
+  }
+
+  /* Intro Styles */
+
+  #intro {
+    margin: 50px;
+  }
+  
+  #intro p {
+    padding: 25px 0;
+    font-size: 1.75em;
+  }
+
+  /* About Styles */
+
+
+  #about .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #about .about-picture {
+    width: 40%;
+  }
+
+  #about .about-description {
+    width: 40%;
+  }
+
+  #about p {
+    font-size: 1.2em;
+  }
+
+  /* Skills Styles */
+
+  #skills .skills-item {
+    width: 47%;
+  }
+
+  /* Projects Styles */
+
+  #projects .portfolio-projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-project {
+    padding: 20px;
+    margin: 40px 0;
+    width: 40%;
+  }
+
+  /* Footer Styles */
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+
+  /* General styles */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+
+
 }
 
 @media print,
