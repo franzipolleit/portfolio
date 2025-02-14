@@ -86,9 +86,6 @@ textarea {
 
 /*---------------------- General Styles --------------------*/
 
-html {
-  font-size: 1rem;
-}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -105,8 +102,9 @@ ul {
 }
 
 .content-wrapper {
-  width: 100%;
-  margin: 30px 0;
+  max-width: 425px;
+  width: 85%;
+  margin: 20px 0;
 }
 
 a {
@@ -114,12 +112,13 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, strong {
   color:#7e013a;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -130,13 +129,21 @@ h3 {
   font-size: 1.5em;
 }
 
-strong {
-  color: #7e013a;
-}
-
 p {
   font-size: 1.25em;
   line-height: 1.5em;
+}
+
+img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  background: #7e013a;
 }
 
 /*---------------------- Mobile Styles --------------------*/
@@ -146,33 +153,23 @@ p {
 header {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
-  /*color: #e094bc;*/
+  padding: 15px 0 0 0;
 }
 
 header .content-wrapper {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;*/
   margin: 0;
-}
-
-header nav {
   width: 100%;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  margin: 0;
 }
 
 header nav ul li {
   font-size: .875em;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* Intro Section */
@@ -180,18 +177,11 @@ header nav ul li {
 #intro {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  margin: 30px;
 }
 
-#intro h1 {
-  padding: 20px 0;
-}
 
 #intro p {
   color:#7e013a;
-  padding: 20px 0;
   font-size: 1.5em;
 }
 
@@ -200,15 +190,10 @@ header nav ul li {
 #about {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  margin: 30px;
 }
 
 #about img {
-  width: 100%;
-  border-radius: 50%;
-  margin: 0 0 30px 0;
+  border-radius: 50px;
 }
 
 /* Skills Section */
@@ -216,15 +201,12 @@ header nav ul li {
 #skills {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 30px;
 }
 
 
 #skills i {
   color: #7e013a;
-  font-size: 5em;
-  margin-bottom: 10px;
+  font-size: 4em;
 }
 
 #skills .skills-items-list {
@@ -235,16 +217,16 @@ header nav ul li {
 }
 
 #skills .skills-item {
-  width: 63%;
-  margin: 30px 0;
+  width: 100%;
+  margin: 25px 0;
 }
 
-#skills p {
+#skills .skills-item p {
   margin: 0;
 }
 
 #skills .tech-stack {
-  padding: 30px 15px;
+  padding: 30px 25px;
   color: #7e013a;
 }
 
@@ -253,32 +235,20 @@ header nav ul li {
 #projects {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-#projects img {
-  padding: 30px 0 30px 0;
-  width: 80%;
-  border-radius: 10%;
 }
 
 .portfolio-project {
-  /*display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;*/
-  padding: 15px;
-  margin: 70px 30px;
+  padding: 20px;
+  margin: 50px 0;
   border:#7e013a solid 3px;
   border-radius: 30px;
   box-shadow: 10px 5px 5px #e094bc;
-  background-color: #fffafa;
+  background-color: #fff6f9;
 }
 
 .portfolio-project button {
   background-color: #7e013a;
-  color: #e094bc;
+  color: #fff6f9;
   font-size: 1.25em;
   font-weight: 700;
   border: none;
@@ -289,46 +259,28 @@ header nav ul li {
 
 /* Footer styles */
 
-.contact-image {
-  display: none;
-}
-
-#contact {
+footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-flow: column wrap;
-  margin: 0;
-  /*background-color: #7e013a;*/
 }
 
-.contact-info {
-  /*display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;*/
-  color: #e094bc;
+footer i {
+  font-size: 3em;
 }
 
-#contact i {
-  font-size: 3.5em;
-  margin-bottom: 40px;
-}
-
-.contact-info ul {
+footer ul {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 50px 0 0 0;
+  margin: 50px 0;
 }
 
-#copyright {
+.copyright {
   font-size: .75em;
   color:#7e013a;
 }
 
-#copyright p {
+.copyright p {
   margin: 0;
 }
 
@@ -429,45 +381,24 @@ header nav ul li {
   header {
     padding: 30px 0;
   }
-  
-  header nav ul {
-    justify-content: space-between;
+
+  header .content-wrapper {
+    width: 85%;
   }
-  
+
   header nav ul li {
     font-size: 1em;
   }
 
   /* Intro Styles */
 
-  #intro {
+  #intro .content-wrapper {
     margin: 50px;
   }
   
   #intro p {
     padding: 25px 0;
     font-size: 1.75em;
-  }
-
-  /* About Styles */
-
-
-  #about .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #about .about-picture {
-    width: 40%;
-  }
-
-  #about .about-description {
-    width: 40%;
-  }
-
-  #about p {
-    font-size: 1.2em;
   }
 
   /* Skills Styles */
@@ -480,21 +411,74 @@ header nav ul li {
 
   #projects .portfolio-projects-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
     flex-wrap: wrap;
   }
   
   .portfolio-project {
-    padding: 20px;
-    margin: 40px 0;
-    width: 40%;
+    margin: 50px 15px;
+    width: 38%;
   }
 
   /* Footer Styles */
 
+  footer i {
+    font-size: 3.5em;
+  }
+  
+  footer ul {
+    margin: 75px 0;
+  }
 
 }
+
+@media only screen and (min-width: 1024px) {
+
+  /* General Styles */
+
+  .content-wrapper {
+    max-width: 850px;
+  }
+
+  /* Header Styles */
+
+  header nav ul {
+    justify-content: space-evenly;
+  }
+
+  /* About Styles */
+
+  #about .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-picture {
+    width: 40%;
+  }
+
+  .about-description {
+    width: 45%;
+  }
+
+  #about .section-divider {
+    display: none;
+  }
+
+  /* Skills Styles */
+
+  #skills .content-wrapper {
+    margin: 50px 0;
+  }
+
+  #skills .skills-item {
+    width: 33%;
+  }
+
+}
+
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
@@ -502,10 +486,24 @@ header nav ul li {
   /* General styles */
 
   .content-wrapper {
-    max-width: 960px;
+    max-width: 1450px;
   }
 
+  header nav ul li {
+    font-size: 1.1em;
+  }
 
+  /* Skills Styles */
+
+  #skills .skills-item {
+    width: 16%;
+  }
+
+  /* Projects Styles */
+
+  .portfolio-project {
+    width: 25%;
+  }
 
 }
 
