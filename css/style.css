@@ -86,13 +86,36 @@ textarea {
 
 /*---------------------- General Styles --------------------*/
 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 1em;
   text-align: center;
   background-color: #ffffff;
   color: #e094bc;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -114,6 +137,7 @@ a {
 
 h1, h2, h3, strong {
   color:#7e013a;
+  font-weight: 700;
 }
 
 h1 {
@@ -154,6 +178,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0 0 0;
+  background-color: #fff6f9;
 }
 
 header .content-wrapper {
@@ -177,6 +202,7 @@ header nav ul li {
 #intro {
   display: flex;
   justify-content: center;
+  background-color: #fff6f9;
 }
 
 
@@ -201,6 +227,7 @@ header nav ul li {
 #skills {
   display: flex;
   justify-content: center;
+  background-color: #fff6f9;
 }
 
 
@@ -263,6 +290,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff6f9;
 }
 
 footer i {
@@ -447,6 +475,12 @@ footer ul {
     justify-content: space-evenly;
   }
 
+  header a:hover {
+    color:#7e013a;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
   /* About Styles */
 
   #about .content-wrapper {
@@ -475,6 +509,35 @@ footer ul {
 
   #skills .skills-item {
     width: 33%;
+  }
+
+  /* Projects Styles */
+
+  .portfolio-project img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 1px 1px #7e013a;
+  }
+
+  .portfolio-project button:hover {
+    background-color: #fff6f9;
+    color: #7e013a;
+    border: #7e013a solid 2px;
+    cursor: pointer;
+    padding: 18px;
+  }
+
+  /* Footer Styles */
+
+  footer .content-wrapper i:hover {
+    color:#7e013a;
+    cursor: pointer;
+  }
+
+  .copyright a:hover {
+    color:#e094bc;
+    cursor: pointer;
+    font-weight: 500;
   }
 
 }
