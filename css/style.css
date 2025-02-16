@@ -284,6 +284,10 @@ header nav ul li {
   margin: 30px 0;
 }
 
+.portfolio-project a {
+  color: #fff6f9;
+}
+
 /* Footer styles */
 
 footer {
@@ -516,7 +520,7 @@ footer ul {
   .portfolio-project img:hover {
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 1px 1px 1px 1px #7e013a;
+    box-shadow: 0.25px 0.25px 1px 1px #7e013a;
   }
 
   .portfolio-project button:hover {
