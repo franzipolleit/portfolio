@@ -536,7 +536,7 @@ footer ul {
   .portfolio-project img:hover {
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 0.25px 0.25px 1px 1px #7e013a;
+    filter: drop-shadow(3px 3px 10px #7e013a);
   }
 
   .portfolio-project button:hover {
