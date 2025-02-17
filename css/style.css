@@ -177,7 +177,7 @@ img {
 header {
   display: flex;
   justify-content: center;
-  padding: 15px 0 0 0;
+  padding: 15px 0;
   background-color: #fff6f9;
 }
 
@@ -330,6 +330,34 @@ footer ul {
 
 .copyright p {
   margin: 0;
+}
+
+/*-------- Legal Notice Page ---------*/
+
+#legal-notice {
+  display: flex;
+  justify-content: center;
+}
+
+#legal-notice .content-wrapper {
+  text-align: left;
+}
+
+#legal-notice h1 {
+  font-size: 1.8em;
+}
+
+#legal-notice h2 {
+  font-size: 1.5em;
+}
+
+#legal-notice p {
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+#legal-notice a {
+  color:#7e013a;
 }
 
 /* ==========================================================================
