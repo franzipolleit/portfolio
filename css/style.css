@@ -290,7 +290,7 @@ header nav ul li {
 
 .portfolio-project button {
   background-color: #7e013a;
-  color:#e094bc;
+  color:#fff6f9;
   font-size: 1.25em;
   font-weight: 700;
   border: none;
@@ -576,6 +576,7 @@ footer ul {
 
   .portfolio-project button:hover {
     background-color: #fff6f9;
+    color:#7e013a;
     border: #7e013a solid 2px;
     cursor: pointer;
     padding: 18px;
