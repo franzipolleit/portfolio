@@ -113,7 +113,7 @@ body {
   font-size: 1em;
   text-align: center;
   background-color: #ffffff;
-  color: #c36895;
+  color: #aa4374;
   margin: 0;
   padding: 0;
 }
@@ -254,7 +254,6 @@ header nav ul li {
 
 #skills .skills-item p {
   margin: 0;
-  color: #aa4374;
 }
 
 #skills .tech-stack {
@@ -304,7 +303,6 @@ header nav ul li {
 
 .project-description p {
   text-align: left;
-  color: #aa4374;
 }
 
 
