@@ -131,7 +131,7 @@ ul {
 }
 
 a {
-  color:#d685af;
+  color:#aa4374;
   text-decoration: none;
 }
 
@@ -254,6 +254,7 @@ header nav ul li {
 
 #skills .skills-item p {
   margin: 0;
+  color: #aa4374;
 }
 
 #skills .tech-stack {
@@ -303,6 +304,7 @@ header nav ul li {
 
 .project-description p {
   text-align: left;
+  color: #aa4374;
 }
 
 
@@ -607,7 +609,7 @@ footer ul {
   }
 
   .copyright a:hover {
-    color:#e094bc;
+    color:#aa4374;
     cursor: pointer;
   }
 
