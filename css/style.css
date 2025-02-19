@@ -113,7 +113,7 @@ body {
   font-size: 1em;
   text-align: center;
   background-color: #ffffff;
-  color: #e094bc;
+  color: #d685af;
   margin: 0;
   padding: 0;
 }
@@ -131,7 +131,7 @@ ul {
 }
 
 a {
-  color: #e094bc;
+  color:#d685af;
   text-decoration: none;
 }
 
@@ -178,7 +178,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  background-color: #fff6f9;
+  background-color: #fff7fa;
 }
 
 header .content-wrapper {
@@ -202,7 +202,7 @@ header nav ul li {
 #intro {
   display: flex;
   justify-content: center;
-  background-color: #fff6f9;
+  background-color: #fff7fa;
 }
 
 
@@ -222,12 +222,16 @@ header nav ul li {
   border-radius: 50px;
 }
 
+.about-description p {
+  text-align: left;
+}
+
 /* Skills Section */
 
 #skills {
   display: flex;
   justify-content: center;
-  background-color: #fff6f9;
+  background-color: #fff7fa;
 }
 
 
@@ -270,7 +274,7 @@ header nav ul li {
   border:#7e013a solid 3px;
   border-radius: 30px;
   filter: drop-shadow(10px 5px 5px #e094bc);
-  background-color: #fff6f9;
+  background-color: #fff7fa;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -288,13 +292,17 @@ header nav ul li {
 
 .project-link {
   background-color: #7e013a;
-  color:#fff6f9;
+  color:#fff7fa;
   font-size: 1.25em;
   font-weight: 700;
   padding: 20px;
   border: none;
   border-radius: 10px;
   margin: 30px 0;
+}
+
+.project-description p {
+  text-align: left;
 }
 
 
@@ -304,7 +312,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff6f9;
+  background-color: #fff7fa;
 }
 
 footer i {
@@ -449,6 +457,12 @@ footer ul {
    Modify as content requires.
    ========================================================================== */
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;  
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* Tablet Styles */
 
@@ -582,7 +596,6 @@ footer ul {
   }
 
   .portfolio-project h3:hover {
-    color:#e094bc;
     transform: scale(1.1);
   }
 
