@@ -303,6 +303,7 @@ header nav ul li {
 
 .project-description p {
   text-align: left;
+  padding: 0 7px 0 10px;
 }
 
 
@@ -549,25 +550,7 @@ footer ul {
     font-weight: 700;
   }
 
-  /* About Styles */
-
-  #about .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   
-  .about-picture {
-    width: 40%;
-  }
-
-  .about-description {
-    width: 45%;
-  }
-
-  #about .section-divider {
-    display: none;
-  }
 
   /* Skills Styles */
 
@@ -593,10 +576,6 @@ footer ul {
     border: #7e013a solid 2px;
     cursor: pointer;
     padding: 18px;
-  }
-
-  .portfolio-project h3:hover {
-    transform: scale(1.1);
   }
 
   /* Footer Styles */
@@ -625,6 +604,26 @@ footer ul {
 
   header nav ul li {
     font-size: 1.1em;
+  }
+
+  /* About Styles */
+
+  #about .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-picture {
+    width: 40%;
+  }
+
+  .about-description {
+    width: 45%;
+  }
+
+  #about .section-divider {
+    display: none;
   }
 
   /* Skills Styles */
